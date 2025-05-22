@@ -12,9 +12,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Plant App',
       theme: ThemeData(
-        scaffoldBackgroundColor: pBackgroundColor,
-        primaryColor: pPrimaryColor,
-        textTheme: Theme.of(context).textTheme.apply(bodyColor: pTextColor),
+        scaffoldBackgroundColor: kBackgroundColor,
+        primaryColor: kPrimaryColor,
+        textTheme: Theme.of(context).textTheme.apply(bodyColor: kTextColor),
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: HomeScreen(),
