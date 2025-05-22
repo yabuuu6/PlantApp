@@ -1,10 +1,11 @@
 import 'dart:io';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:plant_app/constants.dart';
+import 'package:plant_app/screens/camera/components/native_camera_page.dart';
+import 'package:plant_app/screens/camera/components/storage_helper.dart';
 
 
 void showToast(String message) {
@@ -71,7 +72,7 @@ class _HomePageState extends State<HomePage> {
                     label: const Text('Ambil Foto'),
                     onPressed: _takePicture,
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: KSecondaryColor,
+                      backgroundColor: kSecondaryColor,
                       foregroundColor: Colors.deepPurple,
                     ),
                   ),
@@ -83,7 +84,7 @@ class _HomePageState extends State<HomePage> {
                     label: const Text('Pilih dari Galeri'),
                     onPressed: _pickFromGallery,
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: KSecondaryColor,
+                      backgroundColor: kSecondaryColor,
                       foregroundColor: Colors.deepPurple,
                     ),
                   ),
