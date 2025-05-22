@@ -3,6 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:plant_app/screens/camera/camera_screen.dart';
 import 'package:plant_app/screens/home/home_screen.dart';
 import 'package:plant_app/constants.dart';
+import 'package:plant_app/screens/maps/maps_screen.dart';
 
 class MyBottomNavBar extends StatelessWidget {
   final int currentIndex;
@@ -22,7 +23,9 @@ class MyBottomNavBar extends StatelessWidget {
       case 2:
         target = const CameraScreen();
         break;
-        
+      case 3:
+        target = const MapsScreen();
+        break;
       default:
         return;
     }
